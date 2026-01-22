@@ -14,7 +14,6 @@ function convertToObject(sourceString) {
     if (!trimmedKey || !trimmedValue) {
       return acc;
     }
-    acc[trimmedKey] = trimmedValue;
 
     return {
       ...acc,
@@ -24,5 +23,3 @@ function convertToObject(sourceString) {
 }
 
 module.exports = convertToObject;
-
-// .filter(s => s !=='') s - це елемент styles[i]
