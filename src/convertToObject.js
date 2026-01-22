@@ -16,7 +16,10 @@ function convertToObject(sourceString) {
     }
     acc[trimmedKey] = trimmedValue;
 
-    return acc;
+    return {
+      ...acc,
+      [trimmedKey]: trimmedValue,
+    };
   }, {});
 }
 
